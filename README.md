@@ -197,20 +197,19 @@ done
 
 # MongoDB Verification
 
-    ```
+
     docker exec -it mongodb mongosh  
     use imsdb 
     show collections 
     db.work_items.find().pretty() 
     db.signals_raw.find().pretty()
-    ```
+
 
 # 🎨 UI
 ## Open:
 
-    ```
     http://localhost:8080
-    ```
+    
 
 ## Features:
     Incident list
