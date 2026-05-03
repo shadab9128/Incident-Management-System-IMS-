@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: ims-backend
+
+  rabbitmq:
+    host: rabbitmq #localhost --- IGNORE ---
+    port: 5672
+    username: guest
+    password: guest
+
+    listener:
+      simple:
+        retry:
+          enabled: true
+          initial-interval: 2000
+          max-attempts: 3
+          multiplier: 2
+
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/imsdb
+
+server:
+  port: 8080
