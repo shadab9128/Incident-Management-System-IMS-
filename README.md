@@ -196,6 +196,7 @@ done
     429 429 ...
 
 # MongoDB Verification
+
     ```
     docker exec -it mongodb mongosh  
     use imsdb 
@@ -203,17 +204,21 @@ done
     db.work_items.find().pretty() 
     db.signals_raw.find().pretty()
     ```
+
 # 🎨 UI
 ## Open:
+
     ```
     http://localhost:8080
     ```
+
 ## Features:
     Incident list
     RCA submission
     Real-time updates
 
 # 🧪 Run Unit Tests
+
 ```
     ./mvnw test
 ```
